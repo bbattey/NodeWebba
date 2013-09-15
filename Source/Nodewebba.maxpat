@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 2.0, 45.0, 1177.0, 684.0 ],
+		"rect" : [ 0.0, 44.0, 1180.0, 686.0 ],
 		"bgcolor" : [ 0.290817, 0.294085, 0.28755, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -1370,7 +1370,7 @@
 									"fontsize" : 12.0,
 									"hint" : "Input device",
 									"id" : "obj-18",
-									"items" : [ "IAC Driver Bus 1", ",", "SP2X", ",", "DX7s", ",", "TG77", ",", "PG-300", ",", "PC-160A", ",", "Express  128 Port 6", ",", "Express  128 Port 7", ",", "Express  128 Port 8", ",", "828mk3 #3 MIDI Port", ",", "828mk3 #3 Sync Port", ",", "to Max 1", ",", "to Max 2" ],
+									"items" : [ "IAC Driver Bus 1", ",", "to Max 1", ",", "to Max 2" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -2040,6 +2040,21 @@
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
+									"frgb" : 0.0,
+									"id" : "obj-1",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 874.5, 34.0, 150.0, 33.0 ],
+									"text" : "SYNC is disabled for the 0.01 release."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
 									"id" : "obj-73",
 									"maxclass" : "number",
 									"numinlets" : 1,
@@ -2167,7 +2182,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 871.0, 522.5, 150.0, 20.0 ],
-									"text" : "Fire all nodes"
+									"text" : "Send metro to all nodes"
 								}
 
 							}
@@ -2285,8 +2300,8 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 871.0, 564.0, 43.0, 20.0 ],
-									"text" : "s 1fire"
+									"patching_rect" : [ 871.0, 564.0, 57.0, 20.0 ],
+									"text" : "s 1metro"
 								}
 
 							}
@@ -2298,8 +2313,8 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 821.5, 564.0, 43.0, 20.0 ],
-									"text" : "s 2fire"
+									"patching_rect" : [ 821.5, 564.0, 57.0, 20.0 ],
+									"text" : "s 2metro"
 								}
 
 							}
@@ -2311,8 +2326,8 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 772.0, 564.0, 43.0, 20.0 ],
-									"text" : "s 3fire"
+									"patching_rect" : [ 772.0, 564.0, 57.0, 20.0 ],
+									"text" : "s 3metro"
 								}
 
 							}
@@ -2324,8 +2339,8 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 722.5, 564.0, 43.0, 20.0 ],
-									"text" : "s 4fire"
+									"patching_rect" : [ 722.5, 564.0, 57.0, 20.0 ],
+									"text" : "s 4metro"
 								}
 
 							}
@@ -2337,8 +2352,8 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 673.0, 564.0, 43.0, 20.0 ],
-									"text" : "s 5fire"
+									"patching_rect" : [ 673.0, 564.0, 57.0, 20.0 ],
+									"text" : "s 5metro"
 								}
 
 							}
@@ -2350,8 +2365,8 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 623.5, 564.0, 43.0, 20.0 ],
-									"text" : "s 6fire"
+									"patching_rect" : [ 623.5, 564.0, 57.0, 20.0 ],
+									"text" : "s 6metro"
 								}
 
 							}
@@ -2393,7 +2408,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 715.5, 32.0, 150.0, 60.0 ],
+									"patching_rect" : [ 700.5, 34.0, 150.0, 60.0 ],
 									"text" : "For sync to an external ReWire host, the audio system must be set to ad_rewire"
 								}
 
@@ -9626,98 +9641,98 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "bat.imap.lehmer.wrapper.gui.maxpat",
-				"bootpath" : "/Users/bbattey/GitHub/NodeWebba/Source",
+				"bootpath" : "/Volumes/MyData/Users/bbatte00/GitHub/NodeWebba/Source",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.imap.lehmer.wrapper.maxpat",
-				"bootpath" : "/Users/bbattey/GitHub/NodeWebba/Source",
+				"bootpath" : "/Volumes/MyData/Users/bbatte00/GitHub/NodeWebba/Source",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.mapScalarToIntRange.maxpat",
-				"bootpath" : "/Users/bbattey/GitHub/NodeWebba/Source",
+				"bootpath" : "/Volumes/MyData/Users/bbatte00/GitHub/NodeWebba/Source",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.mapScalarToIntRangeFree.maxpat",
-				"bootpath" : "/Users/bbattey/GitHub/NodeWebba/Source",
+				"bootpath" : "/Volumes/MyData/Users/bbatte00/GitHub/NodeWebba/Source",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.imap.lehmer.maxpat",
-				"bootpath" : "/Users/bbattey/GitHub/NodeWebba/Source",
+				"bootpath" : "/Volumes/MyData/Users/bbatte00/GitHub/NodeWebba/Source",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.wrap.maxpat",
-				"bootpath" : "/Users/bbattey/GitHub/NodeWebba/Source",
+				"bootpath" : "/Volumes/MyData/Users/bbatte00/GitHub/NodeWebba/Source",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.mapMode.maxpat",
-				"bootpath" : "/Users/bbattey/GitHub/NodeWebba/Source",
+				"bootpath" : "/Volumes/MyData/Users/bbatte00/GitHub/NodeWebba/Source",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.cumulativeSum.maxpat",
-				"bootpath" : "/Users/bbattey/GitHub/NodeWebba/Source",
+				"bootpath" : "/Volumes/MyData/Users/bbatte00/GitHub/NodeWebba/Source",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.modeMenu.maxpat",
-				"bootpath" : "/Users/bbattey/GitHub/NodeWebba/Source",
+				"bootpath" : "/Volumes/MyData/Users/bbatte00/GitHub/NodeWebba/Source",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "modes.txt",
-				"bootpath" : "/Users/bbattey/GitHub/NodeWebba/Source",
+				"bootpath" : "/Volumes/MyData/Users/bbatte00/GitHub/NodeWebba/Source",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.ranvel.maxpat",
-				"bootpath" : "/Users/bbattey/GitHub/NodeWebba/Source",
+				"bootpath" : "/Volumes/MyData/Users/bbatte00/GitHub/NodeWebba/Source",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.randdel.maxpat",
-				"bootpath" : "/Users/bbattey/GitHub/NodeWebba/Source",
+				"bootpath" : "/Volumes/MyData/Users/bbatte00/GitHub/NodeWebba/Source",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.imap.controls.maxpat",
-				"bootpath" : "/Users/bbattey/GitHub/NodeWebba/Source",
+				"bootpath" : "/Volumes/MyData/Users/bbatte00/GitHub/NodeWebba/Source",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.learnCtrl.maxpat",
-				"bootpath" : "/Users/bbattey/GitHub/NodeWebba/Source",
+				"bootpath" : "/Volumes/MyData/Users/bbatte00/GitHub/NodeWebba/Source",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

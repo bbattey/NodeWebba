@@ -1,0 +1,7 @@
+Nodewebba User Guides
+
+For now, the user documentation for Nodewebba is provided via the videos posted at
+http://BatHatMedia.com/software/nodewebba/
+
+Plus hints are built into the software. Just hover your mouse over items until the yellow hint text appears.
+

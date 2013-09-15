@@ -3,8 +3,9 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 0,
-			"revision" : 8
+			"minor" : 1,
+			"revision" : 3,
+			"architecture" : "x86"
 		}
 ,
 		"rect" : [ 20.0, 53.0, 1228.0, 712.0 ],
@@ -244,7 +245,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u984004647"
+					"varname" : "u173004970"
 				}
 
 			}
@@ -572,7 +573,7 @@
 					"framecolor" : [ 1.0, 0.4, 0.4, 0.501961 ],
 					"hint" : "MIDI Device",
 					"id" : "obj-92",
-					"items" : [ "AU DLS Synth 1", ",", "IAC Driver Bus 1", ",", "SP2X", ",", "DX7s", ",", "TG77", ",", "Express  128 Port 4", ",", "Express  128 Port 5", ",", "Express  128 Port 6", ",", "Express  128 Port 7", ",", "Express  128 Port 8", ",", "828mk3 #3 MIDI Port", ",", "from Max 1", ",", "from Max 2" ],
+					"items" : [ "AU DLS Synth 1", ",", "IAC Driver Bus 1", ",", "from Max 1", ",", "from Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1386,7 +1387,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 98.75, 75.5, 68.0, 20.0 ],
+					"patching_rect" : [ 82.5, 45.0, 68.0, 20.0 ],
 					"text" : "r #1update"
 				}
 
@@ -1400,8 +1401,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 48.75, 75.5, 48.0, 20.0 ],
-					"text" : "r #1fire"
+					"patching_rect" : [ 48.75, 75.5, 62.0, 20.0 ],
+					"text" : "r #1metro"
 				}
 
 			}
@@ -3794,70 +3795,66 @@
 
 			}
  ],
-		"parameters" : 		{
-
-		}
-,
 		"dependency_cache" : [ 			{
 				"name" : "bat.imap.lehmer.wrapper.maxpat",
-				"bootpath" : "/Users/bbattey/Studio/Code/Nodewebba/130913",
-				"patcherrelativepath" : "",
+				"bootpath" : "/Volumes/MyData/Users/bbatte00/GitHub/NodeWebba/Source",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.mapScalarToIntRange.maxpat",
-				"bootpath" : "/Users/bbattey/Studio/Code/Nodewebba/130913",
-				"patcherrelativepath" : "",
+				"bootpath" : "/Volumes/MyData/Users/bbatte00/GitHub/NodeWebba/Source",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.mapScalarToIntRangeFree.maxpat",
-				"bootpath" : "/Users/bbattey/Studio/Code/Nodewebba/130913",
-				"patcherrelativepath" : "",
+				"bootpath" : "/Volumes/MyData/Users/bbatte00/GitHub/NodeWebba/Source",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.imap.lehmer.maxpat",
-				"bootpath" : "/Users/bbattey/Studio/Code/Nodewebba/130913",
-				"patcherrelativepath" : "",
+				"bootpath" : "/Volumes/MyData/Users/bbatte00/GitHub/NodeWebba/Source",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.wrap.maxpat",
-				"bootpath" : "/Users/bbattey/Studio/Code/Nodewebba/130913",
-				"patcherrelativepath" : "",
+				"bootpath" : "/Volumes/MyData/Users/bbatte00/GitHub/NodeWebba/Source",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.mapMode.maxpat",
-				"bootpath" : "/Users/bbattey/Studio/Code/Nodewebba/130913",
-				"patcherrelativepath" : "",
+				"bootpath" : "/Volumes/MyData/Users/bbatte00/GitHub/NodeWebba/Source",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.cumulativeSum.maxpat",
-				"bootpath" : "/Users/bbattey/Studio/Code/Nodewebba/130913",
-				"patcherrelativepath" : "",
+				"bootpath" : "/Volumes/MyData/Users/bbatte00/GitHub/NodeWebba/Source",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.modeMenu.maxpat",
-				"bootpath" : "/Users/bbattey/Studio/Code/Nodewebba/130913",
-				"patcherrelativepath" : "",
+				"bootpath" : "/Volumes/MyData/Users/bbatte00/GitHub/NodeWebba/Source",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "modes.txt",
-				"bootpath" : "/Users/bbattey/Studio/Code/Nodewebba/130913",
-				"patcherrelativepath" : "",
+				"bootpath" : "/Volumes/MyData/Users/bbatte00/GitHub/NodeWebba/Source",
+				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
