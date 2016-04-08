@@ -1,0 +1,107 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fnil\fcharset0 Cambria;}
+{\colortbl;\red255\green255\blue255;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid101\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid201\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid3}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww22820\viewh13880\viewkind0
+\deftab720
+\pard\pardeftab720\ri720
+
+\f0\b\fs24 \cf0 Notes on achieving ReWire sync between DP and Nodewebba\
+
+\b0 Revised 25 Feb, 2016\
+\
+If you choose to capture Nodewebba\'92s output to a MIDI sequencer, you may wish to use the ReWire Sync feature of Nodewebba. This allows your sequencer\'92s transport controls and clock to control Nodewebba\'92s transport and clock. This will keep the two pieces of software in sync timing-wise. \
+\
+Without this, the timing of the two pieces of software would likely drift apart over time.  Your MIDI data, while still successfully recorded, would not have a consistent relationship to the time-grid of the sequencer. This could make further editing work considerably more difficult. \
+\
+Even when the Nodewebba clock is driven by the sequencer clock, it still takes time for Nodewebba to do its processing and for the MIDI data to get back to the sequencer. So your MIDI notes will likely not appear on the beat in the sequencer. They should all have a fairly consistent delay time, placing them behind the beat. What the sync achieves is that this delay time will be consistent, rather than gradually floating over the course of the recording session.\
+\
+Setting up this sync is more difficult than just turning on sync in Nodewebba. Further, it may simply not work depending on your computer and software.\
+\
+
+\b We need to start with some vocabulary:\
+
+\b0 \
+
+\b ReWire
+\b0  is a protocol developed by Propellerhead Software that enables control, MIDI and audio communications between pieces of music software. It is supported by many pieces of music software (but not all).\
+\
+In our case, a 
+\b ReWire Host
+\b0  is a piece of Digital Audio Workstation software that will control Nodewebba and record its output.  \
+\
+Nodewebba will be the 
+\b ReWire Client
+\b0 , offering its services to the ReWire Host.\
+\
+\
+
+\b Step-by-Step\
+
+\b0 \
+
+\b 1) Ensure ReWire Compatibility
+\b0 \
+\
+Your sequencer software must be ReWire compatible. Check your sequencer documentation to see if it is, and whether special instructions must be executed to enable it to operate as a ReWire Host.\
+\
+
+\b 2)  Confirm architecture compatibility\
+
+\b0 \
+ReWire requires both the host and the client to have the same build architecture: either 32-bit or 64-bit. If one piece of software is 32-bit and the other 64-bit, ReWire will not connect. Most contemporary software is 64-bit, but you will need to check the architecture of your sequencer in your documentation.\
+\
+You will need to check Nodewebba to make sure it is running in the correct mode \'97 32-bit or 64-bit \'97 as needed to match the host software:\
+\
+\pard\pardeftab720\li559\fi11\ri720
+\cf0 On 
+\b Windows
+\b0 , this is a matter of downloading or running the appropriate build: there are separate 32-bit and 64-bit builds of Nodewebba. \
+\
+On 
+\b Macintosh
+\b0 , before starting Nodewebba, click on the Nodewebba application in the Finder, choose Get Info from the Finder\'92s File menu. In the Info window, there is a check-box option \'93Open in 32-bit mode\'94. Check this box to run in 32-bit mode, or uncheck for 64-bit mode. Close the Info window.\
+\pard\pardeftab720\ri720
+\cf0 \
+
+\b 3) Start and Configure Nodewebba\
+
+\b0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\ri720
+\ls1\ilvl0\cf0 {\listtext	1.	}Open Nodewebba, and choose \'93Audio Status\'85\'94 from the Options menu. \
+{\listtext	2.	}In the Driver dropdown menu, choose \'93ad_rewire\'94.\
+{\listtext	3.	}In Nodewebba, click the activate the check-box next the \'93ReWire Sync\'94.\
+\pard\pardeftab720\ri720
+\cf0 \
+
+\b 4) Start and Configure Your Sequencer\
+
+\b0 \
+The specific tasks to do this will vary with your particular software. Here\'92s what I need to with Digital Performer 8.x:\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\ri720
+\ls2\ilvl0\cf0 {\listtext	1.	}Start Digital Performer and create a new project or open a previous one.\
+{\listtext	2.	}If there is not already an audio track in the project, add one. (Even though we are going be recording MIDI data rather than audio data, an audio track will be required to tell Digital Performer to activate ReWire.)\
+{\listtext	3.	}Designate Max 7 as the audio source for an audio track. This activates ReWire. (Note that Nodewebba may appear as a potential source, too, but you need to use Max 7.)\
+\pard\tx566\pardeftab720\ri720
+\cf0 \
+
+\b 5) Try it out
+\b0 \
+\pard\tx220\tx720\pardeftab720\ri720
+\ls3\ilvl0\cf0 \
+Now when you press play in your sequencer, Nodewebba\'92s main play button should come on and Nodewebba should start playing. If stop the sequencer, Nodewebba should stop. If you change tempo in the sequencer, Nodewebba should change tempo.\
+\
+\
+\
+Technical notes for Max users: \
+* Nodewebba activates the audio system when ReWire Sync is activated.\
+\
+* I find that having Audio Interrupt activated in the Audio Status\'85 window seems to greatly reduce the risk of dropped data. Therefore Nodewebba forces Audio Interrupt to activate when Play is enabled.\
+\
+\pard\pardeftab720\ri720
+\cf0 \
+}
