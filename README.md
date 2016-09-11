@@ -15,6 +15,31 @@ See http://BatHatMedia.com/software/nodewebba/ for downloadable binaries, video 
 Versions
 ==================
 
+
+v0.05    (Sep 5, 2016)
+==================
+
+New Features
+--------
+* Hours/Minutes/Seconds display
+* MIDI control presets separated from the main/node presets
+
+
+Fixes
+-----
+* Fixed reseed (broken in 0.04)
+* Fixed situation where first two notes sometimes jammed together when turning on main transport
+* Fixed occasional inconsistencies in startup; now a reseeded preset should reproduce the same behaviour each time
+
+Other
+-----
+* Core imap object is now two state: when receives a seed, will output that seed on the next bang, then will iterate prior to output after that point
+* Separated update, firing, and rhythm/duration/MIDI output stages to provide more consistent/intuitive links between node outputs, state, and rhythm/duration
+* Set preset save mode to trigger a save dialog if presets have changed and the user leaves the program (previously just wrote out the changes immediately)
+* Slightly clearer default file name for presets files
+* A few ticks are shaved off the duration to ensure that when rhyhtm = duration that the duration is slightly less than the rhythm -- so synths that won't allow overlapped repeated notes are more likely to work 
+
+
 v0.04    (Mar 18, 2016)
 ==================
 

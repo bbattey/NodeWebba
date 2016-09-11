@@ -1,0 +1,3 @@
+open thispatcherinclude BatData:/bretbattey/Studio/GitHub/NodeWebba/Source/modes.txt
+appicon
+BatData:/bretbattey/Studio/GitHub/NodeWebba/Icons/nodewebba.icns

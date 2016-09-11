@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 1,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -1968,6 +1968,7 @@
 					"bgfillcolor_color2" : [ 0.685, 0.685, 0.685, 1.0 ],
 					"bgfillcolor_proportion" : 0.39,
 					"bgfillcolor_type" : "gradient",
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 16.0,
 					"gradient" : 0,
@@ -1981,7 +1982,8 @@
 					"presentation_rect" : [ 15.0, 15.0, 41.0, 26.0 ],
 					"style" : "",
 					"text" : "#1",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textjustification" : 1
 				}
 
 			}
@@ -2704,19 +2706,19 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "bat.learnCtrl.maxpat",
-				"bootpath" : "~/GitHub/NodeWebba/Source",
+				"bootpath" : "~/Studio/GitHub/NodeWebba/Source",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.modeMenu.maxpat",
-				"bootpath" : "~/GitHub/NodeWebba/Source",
+				"bootpath" : "~/Studio/GitHub/NodeWebba/Source",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "modes.txt",
-				"bootpath" : "~/GitHub/NodeWebba/Source",
+				"bootpath" : "~/Studio/GitHub/NodeWebba/Source",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
