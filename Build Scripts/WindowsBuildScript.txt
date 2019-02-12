@@ -1,1 +1,0 @@
-open thispatcherinclude H:/NodeWebba/Source/modes.txtappicon "H:/NodeWebba/Icons/Nodewebba Icon.ico"

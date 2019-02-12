@@ -7,13 +7,37 @@ Bret Battey / Bat Hat Media
 
 Nodewebba is generative music software in which a web of feedback-based pattern generators creates dynamic, interlocking melodic and rhythmic patterns. It brings my concept of Variable-Coupled Map Networks (VCMN) out of the research lab and into the home studio.
 
-I created Nodewebba using Cycling74's Max 7. 
+I created Nodewebba using Cycling74's Max. 
 
 See http://BatHatMedia.com/software/nodewebba/ for downloadable binaries, video overviews, installation instructions and other user documentation.
 
 
 Versions
 ==================
+
+v0.07    (Jan 3, 2018)
+==================
+
+New Features
+--------
+* Can now specify the base rhythm unit (rather than being stuck with 16ths), and can set a different rhythm unit for each node
+* When working with Max, can now specify a custom scale/mode via the custMode global (see Coder's Reference)
+* Changed how mapping to a scale/mode is handled. Now one can simply indicate a highest and lowest allowed note, provide a tonic note to build the mode from, then use a scalar between 0 and 1 to determine which portion of that maximum play range is actually used. 
+* Gated hostsync~ data so one can turn on the audio system w/o effecting the nodewebba transport
+
+Fixes
+-----
+* The external-variable input to control instrument range was not connected correctly
+
+Issues
+------
+* The variable base-rhythm unit implementation has (re)introduced a bug where the same re-seeded node-configuration startup setup does not always produce the same results.
+
+v0.06    (Jan 3, 2018)
+==================
+
+* Updated to Max 8.0.2
+
 
 
 v0.05    (Sep 5, 2016)
