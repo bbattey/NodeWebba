@@ -1,4 +1,3 @@
-open thispatcher
-include /Users/bbatte00/Documents/GitHub/NodeWebba/Source/modes.txt
+open thispatcherinclude BatData:/bretbattey/Studio/GitHub/NodeWebba/Source/modes.txt
 appicon
-/Users/bbatte00/Documents/GitHub/NodeWebba/Icons/nodewebba.icns
+BatData:/bretbattey/Studio/GitHub/NodeWebba/Icons/nodewebba.icns

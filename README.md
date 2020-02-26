@@ -15,29 +15,45 @@ See http://BatHatMedia.com/software/nodewebba/ for downloadable binaries, video 
 Versions
 ==================
 
-v0.07    (Jan 3, 2018)
+
+
+v0.10    (Feb 26, 2020)
 ==================
 
 New Features
 --------
-* Can now specify the base rhythm unit (rather than being stuck with 16ths), and can set a different rhythm unit for each node
-* When working with Max, can now specify a custom scale/mode via the custMode global (see Coder's Reference)
-* Changed how mapping to a scale/mode is handled. Now one can simply indicate a highest and lowest allowed note, provide a tonic note to build the mode from, then use a scalar between 0 and 1 to determine which portion of that maximum play range is actually used. 
-* Gated hostsync~ data so one can turn on the audio system w/o effecting the nodewebba transport
+* MAJOR CHANGE: now using integer rather than float values for a, b and m, and m is variable rather than  operating at a fixed 1.0. This is in keeping with the original Lehmer's Linear Congruence Formula. It is also necessary to ensure consistent results, since floating point operations can introduce unpredictabilities. Providing variable M also provides more control over the patterning of a node.
+
+* The MIDI device menu settings are now stored in presets by name rather than by position on list, so, in
+    theory, you should could the correct device even if the order of items in the list differs.
+
+Note that the above changes will break presets made in previous versions
+
+* aout, bout and mout node output variables are sent whenever a, b or m are changed (facilitates
+     having an extral controller display the state of a node)
+
+* adirect and bdirect node input variables allow direct setting of a and b integer values rather than
+     having to send a 0-1 scalar.
+
+* Duration is now calculated based on a minimum rhythm unit of 1 rather than the node's minimum rhythm unit. This will help ensure one can get durations shorter than the inter-onset rhythm. 
 
 Fixes
 -----
-* The external-variable input to control instrument range was not connected correctly
+* Given the same startup configuration and reseeding, should always provide the same behaviour.
+* Resolved input-variable name class between m and mode selection
+* In the node box GUI, rhythm and dur have been set to be non-editable
 
-Issues
-------
-* The variable base-rhythm unit implementation has (re)introduced a bug where the same re-seeded node-configuration startup setup does not always produce the same results.
+
+Other
+-----
+* Significant redesign under the hood to simplify/clarify the system logic
+* Added node output-state variables for node on/off and mute on/off
+
 
 v0.06    (Jan 3, 2018)
 ==================
 
-* Updated to Max 8.0.2
-
+* Rebuild in Max 8.0.2
 
 
 v0.05    (Sep 5, 2016)

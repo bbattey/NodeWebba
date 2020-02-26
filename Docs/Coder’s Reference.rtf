@@ -1,6 +1,7 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
 {\fonttbl\f0\fnil\fcharset0 Cambria;\f1\froman\fcharset0 TimesNewRomanPSMT;}
 {\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
 {\info
 {\author Bret Battey}}\paperw11900\paperh16840\vieww18400\viewh17100\viewkind1\viewscale150
 \deftab720
@@ -9,7 +10,7 @@
 \f0\fs36 \cf0 Nodewebba Coder\'92s Reference\
 \pard\pardeftab720\ri0\partightenfactor0
 
-\fs24 \cf0 For Nodewebba V0.06
+\fs24 \cf0 For Nodewebba V0.1
 \f1 \
 \
 
@@ -58,6 +59,31 @@ An example in action can be found at the bottom of the Nodewebba patch, in [p ou
 \f1 \
 \pard\pardeftab720\ri0\partightenfactor0
 \cf0 \
+\pard\pardeftab720\ri0\partightenfactor0
+
+\f0\b\fs28 \cf0 Presets\
+\pard\pardeftab720\ri0\partightenfactor0
+
+\f1\b0\fs24 \cf0 \'97\'97\'97\'97\'97\'97\'97\
+\
+\pard\pardeftab720\ri0\partightenfactor0
+
+\f0\b \cf0 Input Variables \
+\pard\pardeftab720\ri0\partightenfactor0
+
+\f1\b0 \cf0 \
+\pard\pardeftab720\li1134\fi-1134\ri0\partightenfactor0
+
+\f0 \cf0 psets	[int] 
+\f1 \uc0\u8232 
+\f0 choose nodes preset.\
+\
+matp [int]\
+	choose matrix preset
+\f1 \
+\pard\pardeftab720\ri0\partightenfactor0
+\cf0 \
+\
 \pard\pardeftab720\ri0\partightenfactor0
 
 \f0\b\fs28 \cf0 Nodes\
@@ -117,14 +143,24 @@ An example in action can be found at the bottom of the Nodewebba patch, in [p ou
 \f1 \
 \
 
+\f0 adirect  [int] \uc0\u8232 Directly set the a-variable integer value. Is not constrained by\
+		amin and a max
+\f1 \
+\
+
 \f0 amin	[float]\uc0\u8232 a-variable minimum
 \f1 \
 \
 
-\f0 amax	[float]\uc0\u8232 a-variable maximum
+\f0 amax	[float]\uc0\u8232 a-variable maximum\
+
 \f1 \
 
 \f0 b	[0-1]\uc0\u8232 b-variable scalar. Will be scaled to the range b-min to b-max to set b.\
+
+\f1 \
+
+\f0 bdirect  [int] \uc0\u8232 Directly set the b-variable integer value. Is not constrained by bmin or bmax\
 
 \f1 \
 
@@ -136,7 +172,14 @@ An example in action can be found at the bottom of the Nodewebba patch, in [p ou
 
 \f1 \
 
-\f0 r	[0-1]\uc0\u8232 Rhythm scalar.\
+\f0 m	[int >0]\
+	modulo variable\
+\
+ru	[int]\
+\
+	Rhythm unit (integer corresponding to item number in the rhythm unit list)\
+\
+r	[0-1]\uc0\u8232 Rhythm scalar.\
 \
 d	[float >= 0]\uc0\u8232 Duration scalar.\
 \
@@ -144,7 +187,7 @@ rmin	[int >= 1]\uc0\u8232 Minimum rhythm units rhythm/duration range.\
 \
 rmax	[int>=1]\uc0\u8232 Maximum rhythm units for rhythm/duration range.\
 \
-m	[int>=0]\uc0\u8232 Mode/scale number.\
+mode	[int>=0]\uc0\u8232 Mode/scale number.\
 \
 custMode [list of intervals]\
 		Specification of intervals defining the custom mode\
@@ -191,7 +234,16 @@ velmin	[int 0-127]\uc0\u8232 Minimum MIDI velocity\
 \f1\b0 \cf0 \
 \pard\pardeftab720\li1134\fi-1134\ri0\partightenfactor0
 
-\f0 \cf0 key	[int 0-127]\uc0\u8232 The MIDI note, relased with the node fires.\
+\f0 \cf0 aout    [int]\
+	Value of a variable\
+\
+bout	[int]\
+	Value of b variable\
+\
+mout	[int]\
+	Value of m variable\
+\
+key	[int 0-127]\uc0\u8232 The MIDI note, relased with the node fires.\
 \
 rhythm	[int > 0]\uc0\u8232 The number of metro clicks for the rhythm.\
 
@@ -201,7 +253,13 @@ rhythm	[int > 0]\uc0\u8232 The number of metro clicks for the rhythm.\
 \
 vel	[int 0-127]\uc0\u8232 The velocity of the note.\
 \
-val	[0-1]\uc0\u8232 The actual state value of the node.\
+rhythunit [notevalue]\
+	The base rhythmic note value used for calculating rhythms and durations.\
+\
+val	[0-1]\uc0\u8232 The state value of the node scaled to a value between 0 and 1.\
+\
+valraw [int]\
+	The raw integer state value of the node. \
 \
 device	[int >= 0]\uc0\u8232 The MIDI device menu item text\
 \
@@ -209,7 +267,11 @@ channel	[int 1-16]\uc0\u8232 The MIDI channel\
 \
 patch	[int 0-127]\uc0\u8232 The MIDI patch\
 \
+os [on/off]\
+	State of the play toggle for the node\
 \
+muteout [on/off]\
+	State of the mute toggle for the node\
 \pard\pardeftab720\ri0\partightenfactor0
 
 \f1 \cf0 \
