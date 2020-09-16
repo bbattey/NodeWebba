@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 2,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 81.0, 1171.0, 828.0 ],
+		"rect" : [ 34.0, 82.0, 1171.0, 828.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-107",
@@ -317,7 +318,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -350,6 +351,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-16",
@@ -732,8 +734,8 @@
 					"id" : "obj-42",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 3,
+					"outlettype" : [ "", "bang", "bang" ],
 					"patching_rect" : [ 1749.0, 138.0, 277.0, 22.0 ],
 					"text" : "dialog Are you sure you want to clear the presets?"
 				}
@@ -883,10 +885,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 287.0, 68.0, 18.0 ],
+					"patching_rect" : [ 15.0, 287.0, 77.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 98.5, 54.760604858398438, 71.0, 18.0 ],
-					"text" : "v.0.1 (Beta)"
+					"text" : "v.0.101 (Beta)"
 				}
 
 			}
@@ -1131,8 +1133,8 @@
 					"id" : "obj-68",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
+					"numoutlets" : 3,
+					"outlettype" : [ "", "bang", "bang" ],
 					"patching_rect" : [ 1644.5, 371.0, 277.0, 22.0 ],
 					"text" : "dialog Are you sure you want to clear the presets?"
 				}
@@ -1304,7 +1306,6 @@
 			}
 , 			{
 				"box" : 				{
-					"autorestore" : "Node Presets.json",
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-12",
@@ -1312,7 +1313,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1119.0, 63.0, 238.0, 22.0 ],
+					"patching_rect" : [ 1119.0, 63.0, 332.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"client_rect" : [ 4, 44, 358, 172 ],
 						"parameter_enable" : 0,
@@ -1320,7 +1321,7 @@
 						"storage_rect" : [ 583, 69, 1034, 197 ]
 					}
 ,
-					"text" : "pattrstorage \"Node Presets\" @savemode 1",
+					"text" : "pattrstorage \"Node Presets\" @savemode 1 @backupmode 1",
 					"varname" : "Node Presets"
 				}
 
@@ -1413,7 +1414,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1446,6 +1447,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -1505,8 +1507,8 @@
 									"id" : "obj-57",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
+									"numoutlets" : 3,
+									"outlettype" : [ "", "bang", "bang" ],
 									"patching_rect" : [ 934.5, 492.230102999999986, 277.0, 22.0 ],
 									"text" : "dialog Are you sure you want to clear the presets?"
 								}
@@ -3026,7 +3028,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3059,6 +3061,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-47",
@@ -4536,7 +4539,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4569,6 +4572,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-203",
@@ -8813,7 +8817,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -8846,6 +8850,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -10383,25 +10388,17 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-13::obj-58" : [ "duration[1]", "duration", 0 ],
+			"obj-20::obj-58" : [ "duration", "duration", 0 ],
+			"obj-21::obj-58" : [ "duration[9]", "duration", 0 ],
+			"obj-2::obj-58" : [ "duration[2]", "duration", 0 ],
 			"obj-30::obj-58" : [ "duration[8]", "duration", 0 ],
 			"obj-56::obj-58" : [ "duration[7]", "duration", 0 ],
-			"obj-13::obj-58" : [ "duration[1]", "duration", 0 ],
-			"obj-21::obj-58" : [ "duration[9]", "duration", 0 ],
-			"obj-20::obj-58" : [ "duration", "duration", 0 ],
-			"obj-2::obj-58" : [ "duration[2]", "duration", 0 ],
 			"parameterbanks" : 			{
 
 			}
 ,
 			"parameter_overrides" : 			{
-				"obj-30::obj-58" : 				{
-					"parameter_longname" : "duration[8]"
-				}
-,
-				"obj-56::obj-58" : 				{
-					"parameter_longname" : "duration[7]"
-				}
-,
 				"obj-13::obj-58" : 				{
 					"parameter_longname" : "duration[1]"
 				}
@@ -10413,9 +10410,18 @@
 				"obj-2::obj-58" : 				{
 					"parameter_longname" : "duration[2]"
 				}
+,
+				"obj-30::obj-58" : 				{
+					"parameter_longname" : "duration[8]"
+				}
+,
+				"obj-56::obj-58" : 				{
+					"parameter_longname" : "duration[7]"
+				}
 
 			}
-
+,
+			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -10513,13 +10519,6 @@
 				"name" : "bat.learnCtrl.maxpat",
 				"bootpath" : "~/Documents/GitHub/NodeWebba/Source",
 				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Node Presets.json",
-				"bootpath" : "~/Studio/WorkInProgress/Nodewebba Support/200916 Ivan Pedro",
-				"patcherrelativepath" : "../../../../Studio/WorkInProgress/Nodewebba Support/200916 Ivan Pedro",
 				"type" : "JSON",
 				"implicit" : 1
 			}

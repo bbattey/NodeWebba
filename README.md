@@ -20,7 +20,7 @@ v0.101    (Sep 16, 2020)
 
 New Features
 --------
-* Reconfigured the Node-preset file-save mechanism so it automatically keeps 5 backup versions (with .bak in the filename), to help reduce risk of accidental loss/overwrite. (However, Max does not provide this option for the Matrix file-saves.)
+* Reconfigured the Node-preset file-save mechanism so it automatically keep 1 backup version (with .bak in the filename) if user overwrites the same filename, to help reduce risk of accidental loss/overwrite. (Unfortunately, this option is not available in Max for the presets controlling the matrix.)
 
 
 v0.10    (Feb 26, 2020)
