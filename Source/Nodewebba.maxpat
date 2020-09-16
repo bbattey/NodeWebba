@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 82.0, 1171.0, 828.0 ],
+		"rect" : [ 34.0, 81.0, 1171.0, 828.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -1304,6 +1304,7 @@
 			}
 , 			{
 				"box" : 				{
+					"autorestore" : "Node Presets.json",
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-12",
@@ -1311,7 +1312,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1119.0, 63.0, 240.0, 22.0 ],
+					"patching_rect" : [ 1119.0, 63.0, 238.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"client_rect" : [ 4, 44, 358, 172 ],
 						"parameter_enable" : 0,
@@ -2213,7 +2214,7 @@
 									"allowdrag" : 0,
 									"hint" : "Input device",
 									"id" : "obj-18",
-									"items" : [ "IAC Driver Bus 1", ",", "IAC Driver IAC Bus 2", ",", "Network Master 1", ",", "Vienna Instruments MIDI", ",", "to Max 1", ",", "to Max 2" ],
+									"items" : [ "IAC Driver Bus 1", ",", "Network Master 1", ",", "828mk3 MIDI Port", ",", "828mk3 Sync Port", ",", "Express  128 Port 1", ",", "Express  128 Port 2", ",", "Express  128 Port 3", ",", "Express  128 Port 4", ",", "Express  128 Port 5", ",", "Express  128 Port 6", ",", "Express  128 Port 7", ",", "Express  128 Port 8", ",", "Vienna Instruments MIDI", ",", "to Max 1", ",", "to Max 2" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -10383,11 +10384,11 @@
  ],
 		"parameters" : 		{
 			"obj-30::obj-58" : [ "duration[8]", "duration", 0 ],
-			"obj-20::obj-58" : [ "duration", "duration", 0 ],
-			"obj-2::obj-58" : [ "duration[2]", "duration", 0 ],
 			"obj-56::obj-58" : [ "duration[7]", "duration", 0 ],
 			"obj-13::obj-58" : [ "duration[1]", "duration", 0 ],
 			"obj-21::obj-58" : [ "duration[9]", "duration", 0 ],
+			"obj-20::obj-58" : [ "duration", "duration", 0 ],
+			"obj-2::obj-58" : [ "duration[2]", "duration", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -10395,10 +10396,6 @@
 			"parameter_overrides" : 			{
 				"obj-30::obj-58" : 				{
 					"parameter_longname" : "duration[8]"
-				}
-,
-				"obj-2::obj-58" : 				{
-					"parameter_longname" : "duration[2]"
 				}
 ,
 				"obj-56::obj-58" : 				{
@@ -10412,6 +10409,10 @@
 				"obj-21::obj-58" : 				{
 					"parameter_longname" : "duration[9]"
 				}
+,
+				"obj-2::obj-58" : 				{
+					"parameter_longname" : "duration[2]"
+				}
 
 			}
 
@@ -10419,112 +10420,119 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "bat.imap.intLehmer.wrapper.gui.maxpat",
-				"bootpath" : "~/MTI/Projects/Nodewebba 0.1/Source",
+				"bootpath" : "~/Documents/GitHub/NodeWebba/Source",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.imap.intLehmer.wrapper.maxpat",
-				"bootpath" : "~/MTI/Projects/Nodewebba 0.1/Source",
+				"bootpath" : "~/Documents/GitHub/NodeWebba/Source",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.mapScalarToIntRange.maxpat",
-				"bootpath" : "~/MTI/Projects/Nodewebba 0.1/Source",
+				"bootpath" : "~/Documents/GitHub/NodeWebba/Source",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.mapScalarToIntRangeFree.maxpat",
-				"bootpath" : "~/MTI/Projects/Nodewebba 0.1/Source",
+				"bootpath" : "~/Documents/GitHub/NodeWebba/Source",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.imap.intLehmer.maxpat",
-				"bootpath" : "~/MTI/Projects/Nodewebba 0.1/Source",
+				"bootpath" : "~/Documents/GitHub/NodeWebba/Source",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.intwrap.maxpat",
-				"bootpath" : "~/MTI/Projects/Nodewebba 0.1/Source",
+				"bootpath" : "~/Documents/GitHub/NodeWebba/Source",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.modeMenu.maxpat",
-				"bootpath" : "~/MTI/Projects/Nodewebba 0.1/Source",
+				"bootpath" : "~/Documents/GitHub/NodeWebba/Source",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "modes.txt",
-				"bootpath" : "~/MTI/Projects/Nodewebba 0.1/Source",
+				"bootpath" : "~/Documents/GitHub/NodeWebba/Source",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.makeBoundedScale.maxpat",
-				"bootpath" : "~/MTI/Projects/Nodewebba 0.1/Source",
+				"bootpath" : "~/Documents/GitHub/NodeWebba/Source",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.mapScalarToNoteList.maxpat",
-				"bootpath" : "~/MTI/Projects/Nodewebba 0.1/Source",
+				"bootpath" : "~/Documents/GitHub/NodeWebba/Source",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.ranvel.maxpat",
-				"bootpath" : "~/MTI/Projects/Nodewebba 0.1/Source",
+				"bootpath" : "~/Documents/GitHub/NodeWebba/Source",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.randel.maxpat",
-				"bootpath" : "~/MTI/Projects/Nodewebba 0.1/Source",
+				"bootpath" : "~/Documents/GitHub/NodeWebba/Source",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.imap.controls.maxpat",
-				"bootpath" : "~/MTI/Projects/Nodewebba 0.1/Source",
+				"bootpath" : "~/Documents/GitHub/NodeWebba/Source",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bat.learnCtrl.maxpat",
-				"bootpath" : "~/MTI/Projects/Nodewebba 0.1/Source",
+				"bootpath" : "~/Documents/GitHub/NodeWebba/Source",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Node Presets.json",
+				"bootpath" : "~/Studio/WorkInProgress/Nodewebba Support/200916 Ivan Pedro",
+				"patcherrelativepath" : "../../../../Studio/WorkInProgress/Nodewebba Support/200916 Ivan Pedro",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Nodewebba Icon No Background.png",
-				"bootpath" : "~/MTI/Projects/Nodewebba 0.1/Source",
+				"bootpath" : "~/Documents/GitHub/NodeWebba/Source",
 				"patcherrelativepath" : ".",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Nodewebba Text.png",
-				"bootpath" : "~/MTI/Projects/Nodewebba 0.1/Source",
+				"bootpath" : "~/Documents/GitHub/NodeWebba/Source",
 				"patcherrelativepath" : ".",
 				"type" : "PNG",
 				"implicit" : 1
